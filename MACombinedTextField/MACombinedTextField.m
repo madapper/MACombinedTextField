@@ -28,14 +28,12 @@
         self.textField.textColor = [UIColor whiteColor];
         [self addSubview:self.textField];
         
+        divider = [[UIView alloc]initWithFrame:CGRectMake(self.label.frame.size.width, 5, 1, frame.size.height-10)];
+        [self addSubview:divider];
+        
         self.layer.backgroundColor = [[[UIColor whiteColor]colorWithAlphaComponent:0.1]CGColor];
-        self.layer.borderColor = [[[UIColor whiteColor]colorWithAlphaComponent:0.2]CGColor];
         self.layer.borderWidth = 1;
         self.layer.cornerRadius = 3;
-        
-        divider = [[UIView alloc]initWithFrame:CGRectMake(self.label.frame.size.width, 5, 1, frame.size.height-10)];
-        divider.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.1];
-        [self addSubview:divider];
         
         [self setLabelText:@"" withLabelFont:[UIFont systemFontOfSize:[UIFont systemFontSize]] withTextFieldFont:[UIFont systemFontOfSize:[UIFont systemFontSize]]];
         [self setBorderColor:[UIColor lightGrayColor]];

@@ -34,7 +34,6 @@
     password.label.textColor = [UIColor whiteColor];
     password.textField.textColor = [UIColor whiteColor];
     [password setBorderColor:[UIColor redColor]];
-    [password setLabelText:@"Password" withLabelFont:password.label.font withTextFieldFont:password.label.font];
     password.layer.cornerRadius = password.frame.size.height/2;
     password.textField.delegate = self;
     [self.view addSubview:password];
